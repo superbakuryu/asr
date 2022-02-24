@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="csrf-token" content="bbGx4vP7XqKmNSsWH9GXFDyZfBVC91JUUm0JCeDe">
+
+    <link rel="shortcut icon" href="asr/favicon.html">
+
+    <link rel="stylesheet" href="asr/assets/bootstrap.min.css">
+    <link rel="stylesheet" href="asr/assets/font-awesome.min.css">
+    <link rel="stylesheet" href="asr/assets/style.css">
+
+    <!-- app styles -->
+    <link rel="stylesheet" href="asr/assets/app.css">
+    <link rel="stylesheet" href="asr/assets/demo.css">
+
+    <title>Demo ASR</title>
+</head>
+
+<body>
+    <div class="container-fluid main asr text-center">
+    <div class="row h-100 justify-content-center">
+        <div class="col-md-12 d-flex justify-content-center align-items-center">
+            <canvas id="canvas" width="400" height="100p"></canvas>
+		</div>
+		<div class="col-md-8">
+            <div id="plain-text" class="col-md-12" style="overflow-y: scroll">
+                <div id="streaming-content-text" class="text-left"></div>
+            </div>
+            <div>
+                <button type="button" onclick="record()" id="streaming-btn">
+                    <img src="asr/images/start.png">
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <a onclick="clearContent(); return false;" id="clear-btn">
+        <i class="fa fa-times"></i>
+    </a>
+</div>
+    <script src="asr/assets/jquery.min.js"></script>
+    <script src="asr/assets/popper.min.js"></script>
+    <script src="asr/assets/bootstrap.min.js"></script>
+
+    <script>
+        navigator.mediaDevices.getUserMedia({ audio: true })
+        .then(function(stream) {
+            console.log('You let me use your mic!')
+        })
+        .catch(function(err) {
+            console.log('No mic for you!')
+        });
+    </script>
+    <script src="asr/assets/demo-asr.js"></script>
+
+
+</body>
+</html>

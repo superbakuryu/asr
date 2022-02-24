@@ -1,0 +1,151 @@
+.main {
+  background: url(../images/ai-banner.jpg);
+  background-size: cover;
+  background-position: center center;
+  height: 100vh;
+  overflow-y: scroll;
+}
+
+.asr #canvas {
+  background: transparent;
+}
+
+.asr #plain-text {
+  height: 230px;
+  color: #FFF;
+  overflow: hidden;
+  margin-bottom: 10px;
+}
+
+@media (min-width: 992px) {
+  .asr #plain-text {
+    height: 360px;
+  }
+}
+
+.asr #streaming-content-text {
+  padding: 10px;
+  font-size: 22px;
+}
+
+@media (min-width: 992px) {
+  .asr #streaming-content-text {
+    padding: 20px;
+    font-size: 22px;
+  }
+}
+
+.asr .temp {
+  color: rgb(82, 255, 241);
+}
+
+.asr #clear-btn {
+  position: absolute;
+  font-size: 20px;
+  top: 5px;
+  right: 15px;
+  color: rgba(0, 0, 0, 0.15);
+}
+
+.asr #clear-btn:hover {
+  color: white;
+}
+
+.asr #streaming-btn {
+  cursor: pointer;
+  background: transparent;
+  border: none;
+  margin-top: 20px;
+}
+
+@media (min-width: 992px) {
+  .asr #streaming-btn {
+    margin-top: 60px;
+  }
+}
+
+.asr #streaming-btn:focus {
+  outline: none;
+}
+
+.tts .audioplayer {
+  display: none;
+}
+
+.tts #audioplayid {
+  display: none;
+}
+
+.tts #inputtextarea {
+  min-height: 150px;
+  margin-bottom: 10px;
+  font-size: 18px;
+}
+
+@media (min-width: 992px) {
+  .tts #inputtextarea {
+    min-height: 250px;
+    margin-bottom: 30px;
+    font-size: 30px;
+  }
+}
+
+.tts .voice-select {
+  margin-bottom: 10px;
+}
+
+@media (min-width: 992px) {
+  .tts .voice-select {
+    margin-bottom: 30px;
+  }
+}
+
+.tts .btn {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  margin-left: 15px;
+  margin-right: 15px;
+}
+
+@media (min-width: 992px) {
+  .tts .btn {
+    width: 64px;
+    height: 64px;
+  }
+}
+
+.tts .btn .fa {
+  font-size: 1.5em;
+}
+
+@media (min-width: 992px) {
+  .tts .btn .fa {
+    font-size: 2em;
+  }
+}
+
+.tts #buttonSpeak {
+  background-color: #FDB515;
+  color: #000;
+}
+
+.tts #buttonPlayer {
+  background-color: #C880BA;
+  color: #FFF;
+}
+
+.tts #buttonDownload {
+  background-color: #2196f3;
+}
+
+.tts #buttonPlayer .fa-play {
+  margin-left: 5px;
+}
+
+.tts wave {
+  overflow: hidden !important;
+}
+
+
+/*# sourceMappingURL=demo.css.map*/
